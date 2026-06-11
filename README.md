@@ -42,3 +42,6 @@ Then, open `http://localhost:5173` in your browser to start coding!
 2. **Assign `myObject`**: Make sure you assign your final `THREE.Mesh` or `THREE.Group` to the global `myObject` variable.
 3. **Live Update**: The viewer on the right will automatically update 400ms after you stop typing (if your code is valid).
 4. **Export**: Pick your desired format from the dropdown and hit **Export Selection** to download your model!
+## Live Demo
+
+Try the live demo at https://3-js-forge.vercel.app/.
