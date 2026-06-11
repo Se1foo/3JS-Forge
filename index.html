@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Three.js Code to Model Exporter</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./src/style.css">
+</head>
+<body>
+    <div id="editor-container">
+        <h2>3D Node Playground</h2>
+        <p class="subtitle">Code to Mesh Generator & Converter</p>
+        
+        <div id="code-editor"></div>
+        
+        <div class="controls-section">
+            <button id="run-btn" class="btn-run">▶ Generate from Code</button>
+            <hr>
+            <label class="file-upload-label btn-secondary">
+                <input type="file" id="import-file" accept=".obj,.gltf,.glb,.stl">
+                📁 Import Model (.obj, .gltf, .stl)
+            </label>
+            <div class="row">
+                <select id="export-format">
+                    <option value="obj">OBJ</option>
+                    <option value="gltf">GLTF</option>
+                    <option value="stl">STL</option>
+                </select>
+                <button id="export-btn" class="btn-export">Export Selection</button>
+            </div>
+        </div>
+    </div>
+
+    <div id="viewer">
+        <div id="viewer-info">Left Click: Rotate | Right Click: Pan | Scroll: Zoom</div>
+    </div>
+
+    <script type="module" src="./src/main.js"></script>
+</body>
+</html>
